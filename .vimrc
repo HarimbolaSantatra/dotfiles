@@ -129,7 +129,7 @@ tnoremap <Esc> <C-W>N
 " launch python
 :command Py !python3 %:t
 " new tab with explorer
-:command Tab :tabe | :e .
+:command Tab :Texplore
 
 " ========== My macros
 let @x = '^aX<Esc>'
@@ -177,3 +177,6 @@ augroup END
 " go to begin of line
 inoremap <C-b> <C-o>h
 inoremap <C-f> <C-o>l
+
+" search for selected text
+vnoremap <Leader>s "9y/<C-r>9<Enter>
