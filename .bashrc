@@ -220,10 +220,10 @@ mkcd()
 }
 
 # cd and ls in one command
-cdls()
+cl()
 {
     if [ $# -ne 1 ]; then
-        echo "Usage: cdls DIRECTORY"
+        echo "Usage: cl DIRECTORY"
     else
 	cd -- "$1" && ls
     fi
@@ -253,6 +253,16 @@ init_html()
 {
     template="/home/santatra/projet_kely/web/simplehtml/boilerplate.html"
     cp $template .
+}
+
+# Find
+find_file()
+{
+    find . -type f -iname "*$1*" -print
+}
+find_dir()
+{
+    find . -type d -iname "*$1*" -print
 }
 
 # # STARTSHIP: https://starship.rs/
