@@ -12,3 +12,9 @@ vim.api.nvim_create_user_command('Mks', "mks! Session.vim", {})
 vim.api.nvim_create_user_command('BD', ":b#|bd#", {})
 -- save with W
 vim.api.nvim_create_user_command('W', "w", {})
+
+-- Open with typora
+vim.api.nvim_create_user_command('Typora', "!typora % &", {})
+
+-- Copy current directoy
+vim.api.nvim_create_user_command('Ydxsel', "!ydxsel", {})

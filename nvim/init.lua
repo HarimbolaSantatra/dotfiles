@@ -1,16 +1,3 @@
-require("santatra")
-require("plugins")
-
--- disable auto comment insertion
-vim.cmd("autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o")
-
--- cursor: always use block mode
-vim.opt.guicursor = ""
-
--- PLUGIN: PACKER
-require("packer")
-
-
 -- PLUGINS: LAZY VIM
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -54,10 +41,10 @@ require("lazy").setup({
     },
 
     -- color/theme
-    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-    { "sainnhe/everforest", name = "everforest"},
-    { "NLKNguyen/papercolor-theme", name = "papercolor-theme"},
-    { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true},
+    { "catppuccin/nvim", name = "catppuccin", priority = 1000 , enabled=false},
+    { "sainnhe/everforest", name = "everforest", enabled=false},
+    { "NLKNguyen/papercolor-theme", name = "papercolor-theme", enabled=false},
+    { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, enabled=false},
     { "navarasu/onedark.nvim", priority = 1000 , config = true},
 
     -- comment
@@ -142,10 +129,20 @@ require("lazy").setup({
         build = ":TSUpdate"
     },
 
-})
+    -- nvim-tree
+    {
+        "nvim-tree/nvim-tree.lua"
+    },
 
+})
 -- END LAZY VIM
 
+
+-- disable auto comment insertion
+vim.cmd("autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o")
+
+-- cursor: always use block mode
+-- vim.opt.guicursor = ""
 
 --- color disponible
 -- catppuccin-frappe, latte, macchiato, mocha
@@ -164,7 +161,7 @@ vim.o.ignorecase = true
 vim.o.splitright = true
 vim.o.splitbelow = true
 -- number of line remaining
-vim.cmd.set("scrolloff=1")
+vim.cmd.set("scrolloff=9")
 
 -- jump behave like stack
 vim.cmd.set("jumpoptions=stack")
@@ -189,6 +186,9 @@ vim.opt.swapfile = false
 
 -- search highlight
 vim.opt.incsearch = true
+
+-- setting runtimepath
+vim.cmd.set("runtimepath+=/home/santatra/projet_kely/neovim/plugins/lpma.nvim")
 
 -- lsp-zero (kw: autocomplete)
 local lsp = require('lsp-zero').preset({})
@@ -306,3 +306,6 @@ require('telescope').setup {
     },
 }
 
+require("santatra")
+require("tj")
+require("plugins")

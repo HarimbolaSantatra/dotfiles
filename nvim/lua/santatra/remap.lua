@@ -3,11 +3,11 @@
 
 -- <Leader>b to open file navigation (tags: netrw, navigation)
 vim.keymap.set('n', '<Leader>b', "<cmd>Explore<cr>")
--- Opne file navigation in another tab
-vim.keymap.set('n', '<Leader>B', '<cmd>tabe .<cr>')
+-- Open file navigation in another tab
+vim.keymap.set('n', '<Leader>B', '<cmd>Texplore<cr>')
 
 -- Tagbar
-vim.keymap.set('n', '<Leader>t', "<cmd>TagbarToggle<cr>")
+vim.keymap.set('n', '<Leader>tt', "<cmd>TagbarToggle<cr>")
 
 -- new line in normal mode
 vim.keymap.set('n', '<Enter>', 'o<Esc>')
@@ -28,12 +28,11 @@ vim.keymap.set('n', '<esc>', ':noh<return><esc>', { silent = true  })
 -- buffer
 vim.keymap.set('n', '<Tab>', ':bn<CR>', { silent = false  } )
 vim.keymap.set('n', '<S-Tab>', ':bp<CR>', { silent = false  } )
--- open buffer list quickly
-vim.keymap.set('n', '<Leader>l', "<cmd>:ls<cr>")
 
 -- tab navigation
--- vim.keymap.set('n', '<Tab>', "<cmd>:tabnext<cr>", { silent = false })
--- vim.keymap.set('n', '<S-Tab>', "<cmd>:tabprevious<cr>", { silent = false })
+-- move tab to last and first
+vim.keymap.set('n', '<Leader>t$', "<cmd>$tabmove<cr>", { silent = false })
+vim.keymap.set('n', '<Leader>t0', "<cmd>0tabmove<cr>", { silent = false })
 
 
 -- ========== SPLIT 
@@ -69,8 +68,8 @@ vim.keymap.set('n', '{', '{zz')
 vim.keymap.set('n', '}', '}zz')
 vim.keymap.set('n', '<C-o>', '<C-o>zz')
 vim.keymap.set('n', '<C-i>', '<C-i>zz')
--- vim.keymap.set('n', 'n', 'nzz')
--- vim.keymap.set('n', 'N', 'Nzz')
+vim.keymap.set('n', 'n', 'nzz')
+vim.keymap.set('n', 'N', 'Nzz')
 
 -- centrer et augmenter C-e et C-y
 vim.keymap.set('n', '<C-e>', '5<C-e>')
@@ -97,3 +96,7 @@ vim.keymap.set('i', '<C-b>', '<C-o>h')
 vim.keymap.set('i', '<C-f>', '<C-o>l')
 vim.keymap.set('i', '<A-b>', '<C-o>b')
 vim.keymap.set('i', '<A-f>', '<C-o>e')
+
+-- search for selected text
+vim.keymap.set('v', '<Leader>s', '"9y/<C-r>9<Enter>')
+
