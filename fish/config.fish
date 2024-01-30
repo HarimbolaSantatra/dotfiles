@@ -19,7 +19,7 @@ function mkcd
     mkdir -p -- "$argv[1]" && cd -- "$argv[1]"
 end
 
-function cdls
+function cl
     argparse h/help -- $argv
     or return
     if set -ql _flag_help
@@ -38,6 +38,15 @@ function ydxsel
     else
 	echo 'Error in yanking. See sdrerr above'
     end
+end
+
+
+# Find
+function find_file
+    find . -type f -iname "*$1*" -print
+end
+function find_dir
+    find . -type d -iname "*$1*" -print
 end
 
 

@@ -1,3 +1,6 @@
+# ls
+alias l='ls'
+
 # Activate python environmenet
 alias source_old_django_env='source ~/projet_kely/py-env/django_venv/bin/activate.fish'
 alias source_rl_env='source ~/projet_kely/py-env/rl-env/bin/activate.fish'
@@ -18,6 +21,9 @@ alias tmuxa='tmux a -t '
 alias tmuxls='tmux ls'
 alias tmuxssh='tmux new -s ssh'
 alias tmuxn='tmux new -s'
+
+# tmux-resurect automatically
+#alias tmuxr='tmux attach || { (while ! tmux run-shell ~/.tmux/plugins/tmux-resurrect/scripts/restore.sh; do sleep 0.2; done)&  tmux ; }'
 
 # Telephone
 alias open_phone='cd /run/user/1000/gvfs/'
@@ -64,9 +70,15 @@ alias dateless="date | less"
 # feh: keep zoom and veiwport and fit to window
 alias feh="feh --keep-zoom-vp --scale-down"
 
+# network
+alias showport="lsof -nP -iTCP -sTCP:LISTEN"
+
 # vimconfig
-alias vimconfig="cd -- ~/.config/nvim/ && vim -O init.lua ~/.vimrc ~/.config/nvim/lua/santatra/remap.lua"
+alias vimconfig="cd -- ~/.config/nvim/ && vim -p init.lua ~/.vimrc ~/.config/nvim/lua/santatra/remap.lua"
 alias shellconfig="cd -- ~/.config/fish/ && vim -p config.fish conf.d/alias.fish ~/.bash_aliases ~/.bashrc"
+
+# Docker
+alias compose="docker compose"
 
 
 # EQIMA: ping
@@ -76,3 +88,9 @@ alias ping_misp="ping 185.246.86.154"
 alias ping_master="ping 185.246.86.10"
 alias ping_slave="ping 185.246.84.145"
 alias ping_002="ping 185.246.84.173"
+
+# Specific task
+alias chrome_mifos="google-chrome http://mifos.cbs.eqima.org &"
+
+# Password
+alias secpass="apg -n 6 -m 20 -M SNCL"
