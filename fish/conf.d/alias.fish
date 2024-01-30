@@ -89,8 +89,5 @@ alias ping_master="ping 185.246.86.10"
 alias ping_slave="ping 185.246.84.145"
 alias ping_002="ping 185.246.84.173"
 
-# Specific task
-alias chrome_mifos="google-chrome http://mifos.cbs.eqima.org &"
-
 # Password
 alias secpass="apg -n 6 -m 20 -M SNCL"
