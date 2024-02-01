@@ -13,7 +13,7 @@ To install all the package:
 
 **Using dpkg:**
 
-    dpkg --set-selections pg-list
+    dpkg --set-selections < pkg-list
 
 **Using apt:**
 
