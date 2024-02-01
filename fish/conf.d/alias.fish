@@ -80,6 +80,8 @@ alias shellconfig="cd -- ~/.config/fish/ && vim -p config.fish conf.d/alias.fish
 # Docker
 alias compose="docker compose"
 
+# Edition
+alias edit_nginx="sudo vim /etc/nginx/sites-availables/default"
 
 # EQIMA: ping
 alias ping_wazuh="ping 185.246.86.172"
