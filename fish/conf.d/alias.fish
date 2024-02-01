@@ -71,7 +71,7 @@ alias dateless="date | less"
 alias feh="feh --keep-zoom-vp --scale-down"
 
 # network
-alias showport="lsof -nP -iTCP -sTCP:LISTEN"
+alias show_port="sudo lsof -nP -iTCP -sTCP:LISTEN"
 
 # vimconfig
 alias vimconfig="cd -- ~/.config/nvim/ && vim -p init.lua ~/.vimrc ~/.config/nvim/lua/santatra/remap.lua"
@@ -93,3 +93,7 @@ alias ping_002="ping 185.246.84.173"
 
 # Password
 alias secpass="apg -n 6 -m 20 -M SNCL"
+
+# Kubernetes
+alias kubelog="kubectl logs"
+alias kubeget="kubectl get"

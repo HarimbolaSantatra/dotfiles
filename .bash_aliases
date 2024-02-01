@@ -80,7 +80,7 @@ alias compose="docker compose"
 alias edit_nginx="sudo vim /etc/nginx/sites-available/default"
 
 # network
-alias show_port="lsof -nP -iTCP -sTCP:LISTEN"
+alias show_port="sudo lsof -nP -iTCP -sTCP:LISTEN"
 
 # EQIMA: ping
 alias ping_wazuh="ping 185.246.86.172"
@@ -95,3 +95,7 @@ alias chrome_mifos="google-chrome http://mifos.cbs.eqima.org &"
 
 # Password
 alias secpass="apg -n 6 -m 20 -M SNCL"
+
+# Kubernetes
+alias kubelog="kubectl logs"
+alias kubeget="kubectl get"
