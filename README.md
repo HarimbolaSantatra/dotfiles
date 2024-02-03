@@ -26,3 +26,8 @@ To install all the package:
 **Using apt:**
 
     apt-get delect-upgrade
+
+## Current Issue
+tmux start and stop immediatly if you run it with `tmux`. Issue is probably linked with Tmux Continuum. Instead, you should use a session name:
+
+    tmux new -s SESSION
