@@ -110,3 +110,9 @@ vim.keymap.set('i', '<A-f>', '<C-o>e')
 -- search for selected text
 vim.keymap.set('v', '<Leader>s', '"9y/<C-r>9<Enter>')
 
+-- git remap (fugitive required)
+vim.keymap.set('n', '<Leader>ga', ':G add ')
+vim.keymap.set('n', '<Leader>gs', '<cmd>G status<CR>')
+vim.keymap.set('n', '<Leader>gb', '<cmd>G branch<CR>')
+vim.keymap.set('n', '<Leader>gcc', '<cmd>G commit<CR>')
+vim.keymap.set('n', '<Leader>gca', '<cmd>G commit -a<CR>')

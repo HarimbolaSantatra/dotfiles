@@ -187,3 +187,10 @@ inoremap <C-f> <C-o>l
 
 " search for selected text
 vnoremap <Leader>s "9y/<C-r>9<Enter>
+
+" fugitive remap
+nnoremap <Leader>Ga :G add
+nnoremap <Leader>gs :G status<return>
+nnoremap <Leader>gb :G branch<return>
+nnoremap <Leader>gcc :G commit<return>
+nnoremap <Leader>gca :G commit -a<return>
