@@ -45,6 +45,13 @@ map <Enter> o<ESC>cc<Esc>
 map o o<Esc>cc
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
+" remap Enter to the original Enter when entering command line window
+" source: https://stackoverflow.com/questions/24599217/remap-enter-in-normal-mode-but-not-in-command-line
+augroup commandlinewindow
+    autocmd!
+    autocmd CmdwinEnter * nnoremap <buffer> <CR> <CR>
+augroup END
+
 
 " Theme/Color scheme
 set background=dark
