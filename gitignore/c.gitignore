@@ -1,0 +1,26 @@
+example/*
+test*.*
+next.md
+
+# vim
+*.swo
+*.swp
+*.vim
+
+# filetype
+.*
+*.sh
+*.bak
+
+# jsmn example files
+json.c
+jsondump.c
+simple.c
+simple
+
+# output
+read
+main
+
+# data
+data.json
