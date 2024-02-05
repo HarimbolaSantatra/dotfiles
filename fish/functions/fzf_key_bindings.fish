@@ -1,0 +1,1 @@
+/home/santatra/.fzf/shell/key-bindings.fish
