@@ -1,0 +1,6 @@
+nvim/bundle/
+
+# vim related
+*.swo
+*.swp
+*.vim
