@@ -56,25 +56,10 @@ function init_html
     cp $template ./index.html
 end
 
-# =============== NNN config ===============
-set -x NNN_FCOLORS 'c1e2272e006033f7c6d6abc4'
-set -x NNN_PLUG 'f:fzcd;o:fzopen;g:organize;p:preview-tui;x:!chmod +x "$nnn"'
-set -x NNN_FIFO '/tmp/nnn.fifo'
-set -x NNN_TRASH 2
-function n3
-    # Block nesting of nnn in subshells
-    if test "(NNNLVL:-0)" -eq 0
-        echo "nnn is already running"
-        return
-    end
-
-    # The behaviour is set to cd on quit (nnn checks if NNN_TMPFILE is set)
-    set -x NNN_TMPFILE "(XDG_CONFIG_HOME:-$HOME/.config)/nnn/.lastd"
-
-    if ! -f "$NNN_TMPFILE"
-        . "$NNN_TMPFILE"
-        rm -f "$NNN_TMPFILE" > /dev/null
-    end
+# Start tmux session on every shell login
+# source: https://wiki.archlinux.org/title/Tmux#Start_tmux_on_every_shell_login
+if test -x (command -v tmux); and  test -n "$DISPLAY" && test -z "$TMUX"
+    exec tmux new-session >/dev/null 2>&1
 end
 
 

@@ -172,43 +172,11 @@ eval "$(zoxide init bash)"
 # Make ato completion case insensitive
 bind -s 'set completion-ignore-case on'
 
-# NNN config
-export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
-export NNN_PLUG='f:fzcd;o:fzopen;g:organize;p:preview-tui;x:!chmod +x "$nnn"'
-export NNN_FIFO='/tmp/nnn.fifo'
-# trash: (n=1: trash-cli, n=2: gio trash) use desktop Trash [default: delete]
-export NNN_TRASH=2
-# cd on quit and block nesting nnn
-n3()
-{
-    # Block nesting of nnn in subshells
-    [ "${NNNLVL:-0}" -eq 0 ] || {
-        echo "nnn is already running"
-        return
-    }
-
-    # The behaviour is set to cd on quit (nnn checks if NNN_TMPFILE is set)
-    # If NNN_TMPFILE is set to a custom path, it must be exported for nnn to
-    # see. To cd on quit only on ^G, remove the "export" and make sure not to
-    # use a custom path, i.e. set NNN_TMPFILE *exactly* as follows:
-    #      NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
-    export NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
-
-    # Unmask ^Q (, ^V etc.) (if required, see `stty -a`) to Quit nnn
-    # stty start undef
-    # stty stop undef
-    # stty lwrap undef
-    # stty lnext undef
-
-    # The command builtin allows one to alias nnn to n3, if desired, without
-    # making an infinitely recursive alias
-    command nnn "$@"
-
-    [ ! -f "$NNN_TMPFILE" ] || {
-        . "$NNN_TMPFILE"
-        rm -f "$NNN_TMPFILE" > /dev/null
-    }
-}
+# Start tmux session on every shell login
+# source: https://wiki.archlinux.org/title/Tmux#Start_tmux_on_every_shell_login
+if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ] && [ -z "${TMUX}" ]; then
+    exec tmux new-session >/dev/null 2>&1
+fi
 
 
 # Default editor
