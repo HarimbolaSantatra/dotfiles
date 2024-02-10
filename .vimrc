@@ -135,7 +135,7 @@ tnoremap <Esc> <C-W>N
 :command Subl !subl %
 " launch python
 :command Py !python3 %:t
-" new tab with explorer
+" new tab with explorer/netrw
 :command Tab :Texplore
 
 " ========== My macros

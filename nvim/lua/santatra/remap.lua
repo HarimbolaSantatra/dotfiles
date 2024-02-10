@@ -2,7 +2,7 @@
 
 
 -- <Leader>b to open file navigation (tags: netrw, navigation)
-vim.keymap.set('n', '<Leader>b', "<cmd>Explore<cr>")
+vim.keymap.set('n', '<Leader>b', "<cmd>Lexplore<cr>")
 -- Open file navigation in another tab
 vim.keymap.set('n', '<Leader>B', '<cmd>Texplore<cr>')
 
