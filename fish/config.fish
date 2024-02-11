@@ -15,9 +15,22 @@ end
 
 
 # USER DEFINED FUNCTION
+
+# mkdir and cd in one command
 function mkcd
     mkdir -p -- "$argv[1]" && cd -- "$argv[1]"
 end
+
+# move files and folder in a new directory
+function mvdir
+    set new_dir $argv[1]
+    mkdir -p $new_dir
+    for element in $argv[2..-1]
+        echo "mv $element $new_dir"
+        mv $element $new_dir
+    end
+end
+
 
 function cl
     argparse h/help -- $argv

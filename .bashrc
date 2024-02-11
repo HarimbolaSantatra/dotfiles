@@ -184,6 +184,16 @@ mkcd()
         mkdir -p -- "$1" && cd -- "$1"
 }
 
+# move files and folder in a new directory
+mvdir()
+{
+    new_dir=$1
+    shift;
+    mkdir -p $new_dir
+    echo "mv $* alefa..."
+    mv $* $new_dir
+}
+
 # cd and ls in one command
 cl()
 {
