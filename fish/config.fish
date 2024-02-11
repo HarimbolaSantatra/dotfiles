@@ -56,12 +56,8 @@ function init_html
     cp $template ./index.html
 end
 
-# Start tmux session on every shell login
-# source: https://wiki.archlinux.org/title/Tmux#Start_tmux_on_every_shell_login
-if test -x (command -v tmux); and  test -n "$DISPLAY" && test -z "$TMUX"
-    exec tmux new-session >/dev/null 2>&1
-end
-
-
 # Initialize zoxide
 zoxide init fish | source
+
+# set thefuck alias
+thefuck --alias | source

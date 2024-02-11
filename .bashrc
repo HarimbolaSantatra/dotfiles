@@ -172,13 +172,6 @@ eval "$(zoxide init bash)"
 # Make ato completion case insensitive
 bind -s 'set completion-ignore-case on'
 
-# Start tmux session on every shell login
-# source: https://wiki.archlinux.org/title/Tmux#Start_tmux_on_every_shell_login
-if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ] && [ -z "${TMUX}" ]; then
-    exec tmux new-session >/dev/null 2>&1
-fi
-
-
 # Default editor
 export EDITOR="vim"
 
@@ -237,5 +230,5 @@ find_dir()
     find . -type d -iname "*$1*" -print
 }
 
-# # STARTSHIP: https://starship.rs/
-# eval "$(starship init bash)"
+# set thefuck alias
+thefuck --alias | source
