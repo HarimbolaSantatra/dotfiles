@@ -166,6 +166,10 @@ vim.cmd.set("scrolloff=9")
 -- jump behave like stack
 vim.cmd.set("jumpoptions=stack")
 
+-- netrw behavior
+-- tree style
+vim.g.netrw_liststyle = 3
+
 -- Toujours afficher le status line
 vim.cmd.set("laststatus=2")
 
