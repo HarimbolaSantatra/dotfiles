@@ -22,6 +22,12 @@ vim.api.nvim_create_autocmd('CmdwinEnter', {
     command = 'nnoremap <buffer> <CR> <CR>'
 })
 
+-- remap Enter to the original Enter when entering quickfix
+vim.api.nvim_create_autocmd('BufReadPost', {
+    pattern = 'quickfix',
+    command = 'nnoremap <buffer> <CR> <CR>'
+})
+
 -- Terminal mode F4
 vim.keymap.set( {'n', 'i' }, '<F12>', "<cmd>split | :term<return>a")
 vim.keymap.set( {'n', 'i' }, '<S-F12>', "<cmd>vsplit | :term<return>a")

@@ -52,6 +52,10 @@ augroup commandlinewindow
     autocmd CmdwinEnter * nnoremap <buffer> <CR> <CR>
 augroup END
 
+" remap Enter to the original Enter when entering quickfix
+" https://superuser.com/questions/815416/hitting-enter-in-the-quickfix-window-doesnt-work
+autocmd BufReadPost quickfix nnoremap <buffer> <CR> <CR>
+
 
 " Theme/Color scheme
 set background=dark
@@ -135,7 +139,7 @@ tnoremap <Esc> <C-W>N
 :command Subl !subl %
 " launch python
 :command Py !python3 %:t
-" new tab with explorer/netrw
+" new tab with explorer
 :command Tab :Texplore
 
 " ========== My macros
