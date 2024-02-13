@@ -241,4 +241,4 @@ find_dir()
 }
 
 # set thefuck alias
-thefuck --alias | source
+eval $(thefuck --alias)
