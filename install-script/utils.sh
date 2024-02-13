@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
+echo "Install fzf and zoxide"
+# Source: https://github.com/junegunn/fzf?tab=readme-ov-file#using-git
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+# Source: https://github.com/ajeetdsouza/zoxide
+sudo apt install -y zoxide
+
+
 echo "Installing figlet ..."
 sudo apt-get install -y figlet
 
