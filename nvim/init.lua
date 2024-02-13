@@ -129,9 +129,18 @@ require("lazy").setup({
         build = ":TSUpdate"
     },
 
+    -- treesitter
+    {
+        'nvim-tree/nvim-web-devicons',
+    },
+
     -- nvim-tree
     {
-        "nvim-tree/nvim-tree.lua"
+	"nvim-tree/nvim-tree.lua",
+	lazy = false,
+	dependencies = {
+	    "nvim-tree/nvim-web-devicons",
+	}
     },
 
 })
