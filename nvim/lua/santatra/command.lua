@@ -18,3 +18,5 @@ vim.api.nvim_create_user_command('Typora', "!typora % &", {})
 
 -- Copy current directoy
 vim.api.nvim_create_user_command('Ydxsel', "!ydxsel", {})
+-- Set number
+vim.api.nvim_create_user_command('Num', "set number | set relativenumber", {})
