@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+sudo apt update
+
 echo "Install fzf and zoxide"
 # Source: https://github.com/junegunn/fzf?tab=readme-ov-file#using-git
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
@@ -17,3 +19,7 @@ pip3 install thefuck --user
 echo "Installing hugo ..."
 sudo snap install hugo
 # Also work: sudo apt install hugo
+
+echo "Installing translate-shell ..."
+# https://github.com/soimort/translate-shell
+sudo apt install -y translate-shell
