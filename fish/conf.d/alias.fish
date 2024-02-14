@@ -1,6 +1,9 @@
 # ls
 alias l='ls'
 
+# egrep alias
+alias egrep='egrep --color=auto'
+
 # Activate python environmenet
 alias source_old_django_env='source ~/projet_kely/py-env/django_venv/bin/activate.fish'
 alias source_rl_env='source ~/projet_kely/py-env/rl-env/bin/activate.fish'
@@ -16,6 +19,7 @@ alias ping8='ping 8.8.8.8'
 
 # Pour tmux
 ## Attach ny default 0
+alias t='tmux'
 alias tmux0='tmux a -t 0'
 alias tmuxa='tmux a -t '
 alias tmuxls='tmux ls'
