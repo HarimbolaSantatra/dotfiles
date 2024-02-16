@@ -144,9 +144,10 @@ export PATH=/opt/avra-1.3.0/src:$PATH
 export PATH=/opt/arduino-1.8.19/hardware/tools/avr/bin:$PATH
 # DOTNET
 export PATH=~/.dotnet/:$PATH
-# Deno
+# Deno and Yarn
 export DENO_INSTALL="/home/santatra/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
+export PATH="/home/santatra/.yarn/bin:$PATH"
 
 
 

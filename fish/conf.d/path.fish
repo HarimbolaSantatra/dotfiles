@@ -12,6 +12,7 @@ fish_add_path /opt/arduino-1.8.19/hardware/tools/avr/bin
 
 fish_add_path /home/santatra/.dotnet/
 
-# Deno
+# Deno and yarn
 set DENO_INSTALL "/home/santatra/.deno"
 fish_add_path "$DENO_INSTALL/bin"
+fish_add_path "/home/santatra/.yarn/bin"
