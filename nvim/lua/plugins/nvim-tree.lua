@@ -34,8 +34,9 @@ require("nvim-tree").setup({
     group_empty = true,
   },
   filters = {
-    dotfiles = true,
-    custom = { "^.git$" , "^node_modules$"}
+    git_ignored = false,
+    dotfiles = false,
+    custom = { "^.git$" , "^node_modules$", "^__pycache__$"}
   },
   on_attach = my_on_attach,
 })
