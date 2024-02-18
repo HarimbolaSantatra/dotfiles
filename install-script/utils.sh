@@ -31,3 +31,6 @@ sudo snap install hugo
 echo "Installing translate-shell ..."
 # https://github.com/soimort/translate-shell
 sudo apt install -y translate-shell
+
+# cmake
+sudo apt install -y cmake
