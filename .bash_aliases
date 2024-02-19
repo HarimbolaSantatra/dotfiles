@@ -99,3 +99,8 @@ alias secpass="apg -n 6 -m 20 -M SNCL"
 # Kubernetes
 alias kubelog="kubectl logs"
 alias kubeget="kubectl get"
+
+# lxc/lxd
+alias lxc='sudo lxc'
+alias lxd='sudo lxd'
+
