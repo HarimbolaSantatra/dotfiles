@@ -9,6 +9,7 @@ Includes all my configuration.
 - ...
 
 ## Files
+- `setup.sh`: setup all configuration in their respective place
 - **Utils**:
 - - [Hugo](https://gohugo.io/getting-started/quick-start/): static site generator
 - - [thefuck](https://github.com/nvbn/thefuck)
