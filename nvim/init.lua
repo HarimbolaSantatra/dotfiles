@@ -44,8 +44,8 @@ require("lazy").setup({
     { "catppuccin/nvim", name = "catppuccin", priority = 1000 , enabled=false},
     { "sainnhe/everforest", name = "everforest", enabled=false},
     { "NLKNguyen/papercolor-theme", name = "papercolor-theme", enabled=false},
-    { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, enabled=false},
-    { "navarasu/onedark.nvim", priority = 1000 , config = true},
+    { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, enabled=true},
+    { "navarasu/onedark.nvim", priority = 1000 , config = true, enabled=false},
 
     -- comment
     {
@@ -159,7 +159,7 @@ vim.cmd("autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatopt
 -- PaperColor
 -- gruvbox
 -- onedark
-theme_name = "onedark"
+theme_name = "gruvbox"
 theme_mode = "dark"
 vim.cmd("set background=" .. theme_mode)
 vim.cmd("colorscheme " .. theme_name)
