@@ -319,6 +319,9 @@ require('telescope').setup {
     },
 }
 
+-- gruvbox theme setup
+vim.g.gruvbox_contrast_light = 'hard'
+
 require("santatra")
 require("tj")
 require("plugins")
