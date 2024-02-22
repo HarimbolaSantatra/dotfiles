@@ -16,3 +16,4 @@ fish_add_path /home/santatra/.dotnet/
 set DENO_INSTALL "/home/santatra/.deno"
 fish_add_path "$DENO_INSTALL/bin"
 fish_add_path "/home/santatra/.yarn/bin"
+fish_add_path "/usr/local/go/bin"

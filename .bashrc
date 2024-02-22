@@ -142,6 +142,7 @@ export PATH=~/.dotnet/:$PATH
 export DENO_INSTALL="/home/santatra/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 export PATH="/home/santatra/.yarn/bin:$PATH"
+export PATH="/usr/local/go/bin:$PATH"
 
 
 
