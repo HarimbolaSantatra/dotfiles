@@ -49,3 +49,6 @@ git clone https://github.com/nektos/act
 cd act
 make
 sudo make install
+
+# ripgrep: for telescope on neovim
+sudo apt install ripgrep
