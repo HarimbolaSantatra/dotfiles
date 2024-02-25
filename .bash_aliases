@@ -73,6 +73,8 @@ alias feh="feh --keep-zoom-vp --scale-down"
 alias vimconfig="cd -- ~/.config/nvim/ && vim -p init.lua ~/.vimrc lua/santatra/remap.lua"
 alias shellconfig="cd -- ~/.config/fish/ && vim -p config.fish ~/.bash_aliases ~/.bashrc"
 
+alias brightnessctl="sudo brightnessctl"
+
 # Docker
 alias compose="docker compose"
 
