@@ -29,9 +29,7 @@ alias open_phone='cd /run/user/1000/gvfs/'
 
 # fzf
 # sd: search directory
-alias dirfzf="cd \$(find * -type d | fzf --height 40%)"
-# search directory in all folder
-alias sdall="cd ~ && cd \$(find * -type d | fzf --height 40%)"
+alias cdfzf="cd \$(find * -type d | fzf --height 40%)"
 # open vim after fuzzy find file
 alias vimfzf="vim \$(fzf --height=40%)"
 # open nvim after fuzzy find file
