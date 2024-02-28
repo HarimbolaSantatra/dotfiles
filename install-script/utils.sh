@@ -43,6 +43,7 @@ sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.22.0.linux-amd64.ta
 echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
 echo "fish_add_path \"/usr/local/go/bin\"" >> ~/.config/fish/conf.d/path.fish
 go version
+sudo snap install golangci-lint
 
 # Install https://github.com/nektos/act
 git clone https://github.com/nektos/act
