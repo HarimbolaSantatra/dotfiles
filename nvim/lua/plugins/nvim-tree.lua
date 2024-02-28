@@ -41,5 +41,10 @@ require("nvim-tree").setup({
   on_attach = my_on_attach,
   disable_netrw = false,
   hijack_netrw = true,
+  actions = {
+      open_file = {
+	  quit_on_open = true
+      }
+  }
 })
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-rsync_flags="-auv"
+rsync_flags="-auP"
 config_path="/home/$USER/.config"
 rsync $rsync_flags fish/ $config_path/fish/
 rsync $rsync_flags i3/config $config_path/i3/
