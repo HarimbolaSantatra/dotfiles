@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -e
 
+# i3-resurrect: https://github.com/JonnyHaystack/i3-resurrect
+pip3 install --user --upgrade i3-resurrect
+
 # Github command line client
 # https://github.com/cli/cli/blob/trunk/docs/install_linux.md
 type -p curl >/dev/null || (sudo apt update && sudo apt install curl -y)
