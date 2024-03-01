@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # source: https://learn.microsoft.com/en-us/powershell/scripting/install/install-ubuntu?view=powershell-7.4#installation-via-package-repository-the-package-repository
+set -e
 
 # Update the list of packages
 sudo apt-get update
@@ -25,6 +26,3 @@ sudo apt-get update
 ###################################
 # Install PowerShell
 sudo apt-get install -y powershell
-
-# Start PowerShell
-pwsh
