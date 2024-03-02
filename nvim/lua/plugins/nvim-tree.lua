@@ -1,6 +1,6 @@
 -- netrw
-vim.g.loaded_netrw = 0
-vim.g.loaded_netrwPlugin = 0
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
@@ -44,7 +44,7 @@ require("nvim-tree").setup({
       }
   },
   on_attach = my_on_attach,
-  disable_netrw = false,
-  hijack_netrw = true,
+  disable_netrw = true,
+  hijack_netrw = false,
 })
 
