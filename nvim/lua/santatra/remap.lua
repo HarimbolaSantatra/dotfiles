@@ -3,19 +3,6 @@
 -- Tagbar
 vim.keymap.set('n', '<Leader>tt', "<cmd>TagbarToggle<cr>")
 
--- new line in normal mode
-vim.keymap.set('n', '<Enter>', 'o<Esc>')
-
--- remap Enter to the original Enter when entering command line window
-local clear_enter_group = vim.api.nvim_create_augroup('clear_enter_group', {
-        clear = true
-})
-vim.api.nvim_create_autocmd('CmdwinEnter', {
-    pattern = '*',
-    group = clear_enter_group,
-    command = 'nnoremap <buffer> <CR> <CR>'
-})
-
 -- remap Enter to the original Enter when entering quickfix
 vim.api.nvim_create_autocmd('BufReadPost', {
     pattern = 'quickfix',
