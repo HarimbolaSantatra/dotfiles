@@ -38,6 +38,11 @@ require("nvim-tree").setup({
     dotfiles = false,
     custom = { "^.git$" , "^node_modules$", "^__pycache__$"}
   },
+  actions = {
+      open_file = {
+	  quit_on_open = true
+      }
+  },
   on_attach = my_on_attach,
   disable_netrw = false,
   hijack_netrw = true,
