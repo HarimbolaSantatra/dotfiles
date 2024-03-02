@@ -83,6 +83,9 @@ autocmd FileType html, javascript set omnifunc=htmlcomplete#CompleteTags
 nnoremap n nzz
 nnoremap N Nzz
 
+" add cursorline
+:set cursorline
+
 " SCROLL VERTICAL CENTERING
 " there are always at least <n> lines visible above the cursor, and five lines visible below the cursor
 " ataovy ambony be raha tinal ho ampovoany foana ny curseur
