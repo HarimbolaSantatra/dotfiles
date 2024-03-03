@@ -9,6 +9,7 @@ Includes all my configuration.
 - ...
 
 ## Files
+- `install-script/`: all installation script
 - `setup.sh`: setup all configuration in their respective place
 - **Utils**:
 - - [Hugo](https://gohugo.io/getting-started/quick-start/): static site generator
@@ -22,17 +23,6 @@ To fix the 'touch' function on the touchpad when using i3, follow these instruct
     cd /etc/X11/xorg.conf.d
 
 then, copy the content of `files/90-touchpad.conf` inside it.
-
-## Install package
-To install all the package:
-
-**Using dpkg:**
-
-    dpkg --set-selections < pkg-list
-
-**Using apt:**
-
-    apt-get delect-upgrade
 
 ## Current Issue
 tmux start and stop immediatly if you run it with `tmux`. Issue is probably linked with Tmux Continuum. Instead, you should use a session name:
