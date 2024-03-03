@@ -79,7 +79,7 @@ alias show_port="sudo lsof -nP -iTCP -sTCP:LISTEN"
 alias vimconfig="cd -- ~/.config/nvim/ && vim -p init.lua ~/.vimrc ~/.config/nvim/lua/santatra/remap.lua"
 alias shellconfig="cd -- ~/.config/fish/ && vim -p config.fish conf.d/alias.fish ~/.bash_aliases ~/.bashrc"
 
-alias brightnessctl="sudo brightnessctl"
+alias br="sudo brightnessctl set "
 
 # Docker
 alias compose="docker compose"
