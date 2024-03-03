@@ -10,7 +10,9 @@ fish_add_path /opt/avra-1.3.0/src
 # AVRGCC & AVRDUDE
 fish_add_path /opt/arduino-1.8.19/hardware/tools/avr/bin
 
+# dotnet
 fish_add_path /home/santatra/.dotnet/
+fish_add_path /home/santatra/.dotnet/tools
 
 # Deno and yarn
 set DENO_INSTALL "/home/santatra/.deno"
