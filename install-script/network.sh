@@ -5,3 +5,5 @@ sudo apt-get update
 sudo apt-get install -y nmap
 # netcat and wireshark
 sudo apt-get install -y netcat wireshark
+# traceroute
+sudo apt install inetutils-traceroute
