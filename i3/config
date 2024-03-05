@@ -225,6 +225,10 @@ bindcode $mod+16 workspace 7
 bindcode $mod+17 workspace 8
 bindcode $mod+18 workspace 9
 
+# Cycle through active workspaces
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+
 # Change brightness @ brightnessctl
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
