@@ -205,7 +205,7 @@ exec "xrandr --output VGA1-1 --mode '1920x1080_60.00'"
 
 # default workspace layout
 # workspace_layout <default|stacking|tabbed>
-workspace_layout tabbed
+workspace_layout stacking
 
 # change keyboard layout
 exec "setxkbmap -layout us,us"
