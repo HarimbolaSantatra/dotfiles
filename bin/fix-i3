@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "changing keyboard layout ..."
+# change keyboard layout
+setxkbmap -layout us,us
+# should make it toggle layout with alt+shift but not working !
+setxkbmap -option 'grp:alt_shift_toggle'
+
+echo "Remap CAPS to Esc and disabling CAPS ..."
+# Remap keys
+xmodmap -e 'clear lock'
+xmodmap -e 'keysym Caps_Lock = Escape'

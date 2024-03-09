@@ -25,6 +25,10 @@ To fix the 'touch' function on the touchpad when using i3, follow these instruct
 then, copy the content of `files/90-touchpad.conf` inside it.
 
 ## Current Issue
+### Tmux
 tmux start and stop immediatly if you run it with `tmux`. Issue is probably linked with Tmux Continuum. Instead, you should use a session name:
 
     tmux new -s SESSION
+
+### i3
+Sometimes, on different host, change keyboard remap is not working on i3. In this case, run `./bin/fix-i3`
