@@ -32,3 +32,6 @@ tmux start and stop immediatly if you run it with `tmux`. Issue is probably link
 
 ### i3
 Sometimes, on different host, change keyboard remap is not working on i3. In this case, run `./bin/fix-i3`
+
+## TODO
+- Add confirmation before install a package so the user can select which package to install.
