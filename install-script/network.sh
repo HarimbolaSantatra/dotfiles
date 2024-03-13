@@ -7,9 +7,13 @@ sudo apt install net-tools
 sudo apt-get install -y nmap
 # traceroute
 sudo apt install inetutils-traceroute
+# netcat
+sudo apt install -y netcat
 
-# netcat and wireshark
-sudo apt install -y netcat wireshark
+# wireshark
+sudo apt install -y wireshark
+# If you want to use tshark:
+# sudo apt install -y tshark
 # Set wireshark to run as nonroot
 sudo usermod -aG wireshark santatra
 sudo chgrp wireshark $(which dumpcap)
