@@ -6,6 +6,6 @@ sudo apt install net-tools
 # Nmap
 sudo apt-get install -y nmap
 # netcat and wireshark
-sudo apt-get install -y netcat wireshark
+sudo apt install -y netcat wireshark
 # traceroute
 sudo apt install inetutils-traceroute
