@@ -79,7 +79,7 @@ vim.keymap.set('n', '<Leader>z', "<cmd>ZVKeyDocset<cr>")
 vim.keymap.set('n', '<Leader>s', ":%s/\\<<C-r><C-w>\\>//g<left><left>")
 
 -- open current file in a new tab
-vim.keymap.set('n', '<C-w>t', ":tabe %<cr>", { silent = true })
+vim.keymap.set('n', '<C-w>t', "<C-W><C-V> <C-W>T", { silent = true })
 
 -- Copy to clipboard
 vim.keymap.set('n', '<Leader>y', '"+y')
