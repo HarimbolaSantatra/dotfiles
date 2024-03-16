@@ -56,6 +56,8 @@ alias gamend="git commit -a --amend --no-edit"
 alias gstatus="git status"
 alias glog="git log"
 alias gbranch="git branch"
+# for quitting rapidly
+alias gall="git add . && git commit -m \"More\" && git push"
 
 # Open fucking disk_d
 alias diskd="open /media/santatra/disk_d"

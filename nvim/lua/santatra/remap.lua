@@ -1,7 +1,7 @@
 --- SANTATRA SHORTCUT
 
 -- Tagbar
-vim.keymap.set('n', '<Leader>tt', "<cmd>TagbarToggle<cr>")
+vim.keymap.set('n', '<Leader>t', "<cmd>TagbarToggle<cr>")
 
 -- remap Enter to the original Enter when entering quickfix
 vim.api.nvim_create_autocmd('BufReadPost', {
@@ -25,12 +25,6 @@ vim.keymap.set('n', '<esc>', ':noh<return><esc>', { silent = true  })
 -- buffer
 vim.keymap.set('n', '<Tab>', ':bn<CR>', { silent = false  } )
 vim.keymap.set('n', '<S-Tab>', ':bp<CR>', { silent = false  } )
-
--- tab navigation
--- move tab to last and first
-vim.keymap.set('n', '<Leader>t$', "<cmd>$tabmove<cr>", { silent = false })
-vim.keymap.set('n', '<Leader>t0', "<cmd>0tabmove<cr>", { silent = false })
-
 
 -- ========== SPLIT 
 -- resize: make resize larger
@@ -79,7 +73,7 @@ vim.keymap.set('n', '<Leader>z', "<cmd>ZVKeyDocset<cr>")
 vim.keymap.set('n', '<Leader>s', ":%s/\\<<C-r><C-w>\\>//g<left><left>")
 
 -- open current file in a new tab
-vim.keymap.set('n', '<C-w>t', ":tabe %<cr>", { silent = true })
+vim.keymap.set('n', '<C-w>t', "<C-W><C-V> <C-W>T", { silent = true })
 
 -- Copy to clipboard
 vim.keymap.set('n', '<Leader>y', '"+y')

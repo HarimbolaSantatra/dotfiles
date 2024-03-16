@@ -31,8 +31,8 @@ nnoremap <Leader>l :ls<CR>
 nnoremap <Tab> :bn<CR>
 nnoremap <S-Tab> :bp<CR>
 
-" tab
-nnoremap <C-w>t :tabe%<CR>
+" open current file in a new tab
+nnoremap <C-w>t <C-W><C-V> <C-W>T
 
 " recording
 nnoremap Q q
