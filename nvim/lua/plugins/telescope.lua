@@ -7,13 +7,15 @@ vim.keymap.set('n', '<C-p>', function() builtin.find_files({
     no_ignore=true,
     hidden=true,
 }) end,  {})
+vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+vim.keymap.set('n', '<leader>fc', builtin.command_history, {})
 vim.keymap.set('n', '<leader>ff', builtin.git_files,  {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+vim.keymap.set('n', '<leader>fj', builtin.jumplist, {})
 vim.keymap.set('n', '<leader>fm', builtin.marks, {})
 vim.keymap.set('n', '<leader>fr', builtin.registers, {})
-vim.keymap.set('n', '<leader>ft', builtin.current_buffer_tags, {})
+vim.keymap.set('n', '<leader>ft', builtin.tagstack, {})
 
 local actions = require('telescope.actions')
 
