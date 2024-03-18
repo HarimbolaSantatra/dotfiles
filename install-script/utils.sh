@@ -56,3 +56,6 @@ sudo make install
 
 # ripgrep: for telescope on neovim
 sudo apt install ripgrep
+
+# Lynx browser
+sudo apt install lynx
