@@ -15,6 +15,7 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>fj', builtin.jumplist, {})
 vim.keymap.set('n', '<leader>fm', builtin.marks, {})
 vim.keymap.set('n', '<leader>fr', builtin.registers, {})
+vim.keymap.set('n', '<leader>fs', builtin.search_history, {})
 vim.keymap.set('n', '<leader>ft', builtin.tagstack, {})
 
 local actions = require('telescope.actions')
