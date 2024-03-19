@@ -62,6 +62,18 @@ function find_dir
     find . -type d -iname "*$1*" -print
 end
 
+# LazyGit
+function lazygit
+    git add .
+    if test (count $argv) -eq 1
+	set -l comment "$argv[1]"
+    else
+	set -l comment "LazyGit"
+    end
+    git commit -a -m $comment
+    git push
+end
+
 
 # Create html template
 function init_html

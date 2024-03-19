@@ -20,3 +20,6 @@ vim.api.nvim_create_user_command('Typora', "!typora % &", {})
 vim.api.nvim_create_user_command('Ydxsel', "!ydxsel", {})
 -- Set number
 vim.api.nvim_create_user_command('Num', "set number | set relativenumber", {})
+
+-- Lazy Git push
+vim.api.nvim_create_user_command('LG', "!git add . && git commit -m \'Lazypush\' && git push", {})

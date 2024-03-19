@@ -219,6 +219,18 @@ ydxsel()
     fi
 }
 
+# LazyGit
+lazygit() {
+    git add .
+    if [ $# -eq 1 ];then
+	comment=$1
+    else
+	comment="LazyGit"
+    fi
+    git commit -a -m "$comment"
+    git push
+}
+
 # Create html template
 init_html()
 {
