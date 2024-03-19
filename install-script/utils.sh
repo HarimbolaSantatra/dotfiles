@@ -49,4 +49,4 @@ sudo make install
 sudo apt install ripgrep
 
 # Lynx browser
-sudo apt install lynx
+sudo apt install qutebrowser
