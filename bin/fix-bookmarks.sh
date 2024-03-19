@@ -1,5 +1,11 @@
 #!/bin/bash
 bookmarks_file="$HOME/bookmarks.html"
+if test ! -e $bookmarks_file; then
+    echo "$bookmarks_file doesn't exist!"
+    echo "Import it first from Firefox."
+    exit 1
+fi
+
 config="$HOME/.config"
 quickmarks="$config/qutebrowser/quickmarks"
 # Clear all quickmarks
