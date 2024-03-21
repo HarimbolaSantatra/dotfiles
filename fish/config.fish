@@ -66,9 +66,9 @@ end
 function lazygit
     git add .
     if test (count $argv) -eq 1
-	set -l comment "$argv[1]"
+	set comment "$argv[1]"
     else
-	set -l comment "LazyGit"
+	set comment "LazyGit"
     end
     git commit -a -m $comment
     git push
