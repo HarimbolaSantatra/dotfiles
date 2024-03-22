@@ -171,8 +171,6 @@ vim.o.splitright = true
 vim.o.splitbelow = true
 -- number of line remaining
 vim.cmd.set("scrolloff=9")
--- set cursorline
-vim.cmd.set("cursorline")
 
 -- jump behave like stack
 vim.cmd.set("jumpoptions=stack")
