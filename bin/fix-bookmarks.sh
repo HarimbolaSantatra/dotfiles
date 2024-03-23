@@ -10,10 +10,10 @@ fi
 quickmarks_file="$(pwd)/bookmarks/quickmarks.html"
 
 config="$HOME/.config"
-quickmarks="$config/qutebrowser/quickmarks"
+config_quickmarks="$config/qutebrowser/quickmarks"
 
 # Import quickmarks
-rsync -uav $quickmarks_file $quickmarks
+rsync -uav $quickmarks_file $config_quickmarks
 
 # Uncomment this if you want to import bookmarks in quickmarks
 # truncate -s 0 "$quickmarks" # Clear quickmarks

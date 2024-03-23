@@ -10,6 +10,7 @@ Includes all my configuration.
 
 ## Files
 - `bin/fix-bookmarks.sh`: sync firefox bookmarks (`./bookmarks.html`) to qutebrowser
+- `bin/commit-quickmarks.sh`: sync current quickmarks to git
 - `bookmarks.html`: firefox bookmarks
 - `install-script/`: all installation script
 - `setup.sh`: setup all configuration in their respective place
