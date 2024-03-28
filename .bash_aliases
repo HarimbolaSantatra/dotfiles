@@ -35,8 +35,8 @@ alias vimfzf="vim \$(fzf --height=40%)"
 # open nvim after fuzzy find file
 alias nvimfzf="nvim \$(fzf --height=40%)"
 
-# vim
-alias nvimrc="nvim ~/.vimrc"
+# nvim --clean
+alias nvimc="nvim --clean"
 
 # Zoxide
 alias "zqueryl"="zoxide query -l"
