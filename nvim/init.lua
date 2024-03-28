@@ -313,6 +313,8 @@ require('telescope').setup {
             "^node_modules/",
 	    "^__pycache__/",
 	    "^.mvn/",
+	    "^bin/",
+	    "^obj/",
 	    "%.class",
 	    "%.jar"
         }
